@@ -58,7 +58,7 @@ span a:hover {
 }
 
 .front-page {
-    background-image: url("https://pureluxe.nl/wp-content/uploads/cache/Trinity-College-Library-in-Dublin-pure-luxe-e1521043486245-oz4gt28v06l52doixd70xmjyjdef8f8gpxjh0m585y.jpg");
+    background-image: url("Resources/Library.jpg");
     background-color: rgba(160, 99, 49, 0.87);
     background-blend-mode: multiply;
     clip-path: polygon(30% 0, 100% 0, 100% 20%, 100% 60%, 50% 100%, 20% 100%, 0 100%, 0 20%);
