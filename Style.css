@@ -111,7 +111,8 @@ nav {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
-    line-height: 25px; 
+    line-height: 25px;
+    color: white; 
   }
 
   .dd-menu-item:hover {
@@ -682,6 +683,265 @@ footer {
     }
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    .navbar {
+        height: 110px;
+      }
+
+    nav {
+        visibility: hidden;
+    }
+
+    h1 {
+        font-size: 60px;
+        text-shadow: none;
+    }
+    
+    #icon-container {
+        visibility: visible;
+    }
+
+    .menu-icon {
+        width: 70px;
+        height: 10px;
+        margin: 12px 0;
+    }
+
+    #dropdown-menu {
+        top: 80px;
+        padding: 50px;
+        width: 400px;
+    }
+
+    .dd-menu-item {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .front-bg {
+        height: 1800px;
+    }
+
+    .page {
+        top: 1800px;
+    }
+
+
+    .fun-facts {
+        display: none;
+    }
+
+    .dark-light-toggle {
+        width: 220px;
+    }
+
+    .dark, .light {
+        padding: 10px;
+        font-size: 32px;
+    }
+
+    .section-header {
+        font-size: 80px;
+    }
+
+    .about-text {
+        font-size: 40px;
+        width: 65%;
+    }
+
+    .flex-item {
+        width: 620px;
+        height: 450px;
+    }
+
+    .text {
+        font-size: 50px;
+    }
+
+    .game {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .gameheader {
+        font-size: 32px;
+    }
+
+    .gamequotes {
+        font-size: 36px;
+    }
+
+    .instructions-row {
+        width: 80%;
+    }
+
+    .instructions-number {
+        font-size: 72px;
+    }
+
+    .instructions-text {
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    .start-row {
+        width: 240px;
+        height: 100px;
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .quote {
+        width: 90%;
+        font-size: 40px;
+    }
+
+    .one {
+        margin-top: 50px;
+    }
+
+    .skill-icon img {
+        height: 120px;
+    }
+
+    .skills-text {
+        font-size: 32px;
+    }
+
+    .general-icon {
+        height: 90px;
+    }
+  }
+
+  @media only screen 
+  and (min-width: 321px) {
+    
+
+    nav {
+        visibility: hidden;
+    }
+
+    
+    
+    #icon-container {
+        visibility: visible;
+    }
+
+    .menu-icon {
+        width: 70px;
+        height: 10px;
+        margin: 12px 0;
+    }
+
+    #dropdown-menu {
+        top: 80px;
+        padding: 50px;
+        width: 400px;
+    }
+
+    .dd-menu-item {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .front-bg {
+        height: 1800px;
+    }
+
+    .page {
+        top: 1800px;
+    }
+
+
+    .fun-facts {
+        display: none;
+    }
+
+    .dark-light-toggle {
+        width: 220px;
+    }
+
+    .dark, .light {
+        padding: 10px;
+        font-size: 32px;
+    }
+
+    .section-header {
+        font-size: 80px;
+    }
+
+    .about-text {
+        font-size: 40px;
+        width: 65%;
+    }
+
+    .flex-item {
+        width: 620px;
+        height: 450px;
+    }
+
+    .text {
+        font-size: 50px;
+    }
+
+    .game {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .gameheader {
+        font-size: 32px;
+    }
+
+    .gamequotes {
+        font-size: 36px;
+    }
+
+    .instructions-row {
+        width: 80%;
+    }
+
+    .instructions-number {
+        font-size: 72px;
+    }
+
+    .instructions-text {
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    .start-row {
+        width: 240px;
+        height: 100px;
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .quote {
+        width: 90%;
+        font-size: 40px;
+    }
+
+    .one {
+        margin-top: 50px;
+    }
+
+    .skill-icon img {
+        height: 120px;
+    }
+
+    .skills-text {
+        font-size: 32px;
+    }
+
+    .general-icon {
+        height: 90px;
+    }
+  }
+ 
+  
 
 
   

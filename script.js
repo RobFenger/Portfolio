@@ -29,6 +29,8 @@ let c = window.matchMedia("(max-height: 500px)");
 let d = window.matchMedia("(max-height: 400px)");
 let e = window.matchMedia("(max-height: 300px)");
 let f = window.matchMedia("(max-height: 200px)");
+let g = window.matchMedia("(min-device-width: 320px)");
+let h = window.matchMedia("(max-device-width: 480px)");
 
 
 
@@ -49,7 +51,9 @@ up.onclick = () => {
     page.style.top = '600px';
   } else if (a.matches) {
     page.style.top = '700px';
-  } 
+  } else if (g.matches && h.matches) {
+    page.style.top = '1800px';
+  }
 }
 
 
@@ -60,6 +64,9 @@ let toggle = document.getElementById("toggle");
 let header = document.getElementById("header");
 let menuItems = document.getElementsByClassName("menu-item");
 let codecademy = document.getElementById("codecademy");
+let menuIcon = document.getElementsByClassName("menu-icon");
+let robFenger = document.getElementById("h1");
+let dropdownItems = document.getElementsByClassName("dd-menu-item");
 
 
 darkButton.onclick = () => {
@@ -69,10 +76,22 @@ darkButton.onclick = () => {
   up.style.color = 'snow';
   header.style.backgroundColor = 'black';
   codecademy.style.color = 'snow';
+  dropdownMenu.style.backgroundColor = 'black';
   let i;
   for (i = 0; i < menuItems.length; i++) {
     menuItems[i].style.color = 'snow';
   };
+  let j;
+  for (j = 0; j < menuIcon.length; j++) {
+    menuIcon[j].style.backgroundColor = 'snow';
+  };
+  let k;
+  for (k = 0; k < dropdownItems.length; k++) {
+    dropdownItems[k].style.color = 'snow';
+  };
+  if (g.matches && h.matches) {
+    robFenger.style.color = 'snow';
+  }
 }
 
 lightButton.onclick = () => {  
@@ -82,9 +101,21 @@ lightButton.onclick = () => {
   up.style.color = "black";
   header.style.backgroundColor = 'snow';
   codecademy.style.color = 'black';
+  dropdownMenu.style.backgroundColor = 'snow';
   let i;
   for (i = 0; i < menuItems.length; i++) {
     menuItems[i].style.color = 'black';
+  };
+  let j;
+  for (j = 0; j < menuIcon.length; j++) {
+    menuIcon[j].style.backgroundColor = 'black';
+  };
+  let k;
+  for (k = 0; k < dropdownItems.length; k++) {
+    dropdownItems[k].style.color = 'black';
+  };
+  if (g.matches && h.matches) {
+    robFenger.style.color = 'black';
   }
 }
 
