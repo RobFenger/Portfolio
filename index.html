@@ -6,160 +6,186 @@
     <link href='https://css.gg/chevron-double-down.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+    <link href="Resources/veteran typewriter.ttf">
+    <link href="https://fonts.googleapis.com/css2?family=Meddon&family=Permanent+Marker&family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header id="header">
-        <div class="navbar">
-        <a href="./index.html"><h1 class="menu-item line-1 anim-typewriter" id="h1">Rob Fenger</h1></a>
-            <nav>
-                <span><a href="#aboutme" class="menu-item">About Me</a></span>
-                <span><a href="#projects" class="menu-item">Projects</a></span>
-                <span><a href="#skills" class="menu-item">Skills</a></span>   
-                <span><a href="#Contact" class="menu-item">Contact</a></span>
-            </nav>
+    <header>
+      <div class="navbar" id="header">
+        <a href="./index.html"><h1 class="line-1 anim-typewriter" id="h1">Rob Fenger</h1></a>
+        <nav>
+          <a href="#aboutme" class="menu-item">About Me</a>
+          <a href="#projects" class="menu-item">Projects</a>
+          <a href="#skills" class="menu-item">Skills</a>   
+          <a href="#contact" class="menu-item">Contact</a>
+        </nav>
+        <div class="icon-container" id="icon-container">
+          <div class="menu-icon" id="menu-icon"></div>
+          <div class="menu-icon" id="menu-icon"></div>
+          <div class="menu-icon" id="menu-icon"></div>
         </div>
+        <ul class="dropdown-menu" id="dropdown-menu">
+          <li><a href="#aboutme" class="dd-menu-item">About Me</a></li>
+          <li><a href="#projects" class="dd-menu-item">Projects</a></li>
+          <li><a href="#skills" class="dd-menu-item">Skills</a></li>
+          <li><a href="#contact" class="dd-menu-item">Contact</a></li>
+        </ul>
+      </div>
     </header>
+
     <div class="front-bg" id="front">
-        <div class="front-page" id="front-page">
-            <img class="portret" src="https://www.zoomacademy.nl/blog/wp-content/uploads/2020/04/d77486171c9a487bbe610da9917359c3.jpg" alt="portret">
-        </div>
-        <div class="down" id="down">
-            <p>︾</p>
-        </div>
+      <div class="front-page" id="front-page">
+        <img class="portret" src="https://www.zoomacademy.nl/blog/wp-content/uploads/2020/04/d77486171c9a487bbe610da9917359c3.jpg" alt="portret">
+      </div>
+      <div class="down" id="down">
+        <p>︾</p>
+      </div>
     </div>
-    <main id="main"> 
-        <div class="up" id="up">
-            <p>&#65085;</p>
-        </div>
-        <div class="fun-facts" id="fun-facts">
-            <div class="chevron-left cl1">〈</div>
-            <div class="chevron-left cl2">〈</div>
-            <div class="chevron-left cl3">〈</div>
-            <div class="ff-content">
-                <h3>Fun Facts About Me</h3>
-                <h4 class="number">1</h4>
-                <p class="ff-context">If I could have a superpower...</p>
-                <p class="ff-text">...I would read other people's thoughts</p>
-                <h4 class="number">2</h4>
-                <p class="ff-context">Currently reading...</p>
-                <p class="ff-text">...Troubled Blood by Robert Galbraith</p>
-                <h4 class="number">3</h4>
-                <p class="ff-context">Cannot live without...</p>
-                <p class="ff-text">...Music</p>
-                <h4 class="number">4</h4>
-                <p class="ff-context">If I could have a conversation with a dead person it would be...</p>
-                <p class="ff-text">...Bob Marley</p>
-                <h4 class="number">5</h4>
-                <p class="ff-context">My favourite food is...</p>
-                <p class="ff-text">...Risotto</p>
-                <h4 class="number">6</h4>
-                <p class="ff-context">If I had to be trapped in a videogame I would be...</p>
-                <p class="ff-text">...a flying car in Rocket League</p>
-                <h4 class="number">7</h4>
-                <p class="ff-context">As a kid I wanted to be...</p>
-                <p class="ff-text">...Buzz Lightyear or pro soccer player</p>
-                <h4 class="number">8</h4>
-                <p class="ff-context">My favourite movie is...</p>
-                <p class="ff-text">...The Lion King (which I watched like a thousand times as a kid)</p>
-                <h4 class="number">9</h4>
-                <p class="ff-context">My favourite animal is...</p>
-                <p class="ff-text">...a Turtle</p>
-            </div>
-            
-        </div>
-        <div class="dark-light-toggle" id="toggle">
-            <div class="dark" id="dark">Dark-Mode</div>
-            <div class="light" id="light">Light-Mode</div>
-        </div>
+
+    <div class="page" id="page">
+    <main> 
+
+      <div class="up" id="up">
+        <p>&#65085;</p>
+      </div>
+
+      <div class="ff-container">
+      <div class="fun-facts" id="fun-facts">
+
+        <div class="chevron-left cl1">〈</div>
+        <div class="chevron-left cl2">〈</div>
+        <div class="chevron-left cl3">〈</div>
+
+        <div class="ff-content">
+          <h3>Fun Facts About Me</h3>
+          <h4 class="number">1</h4>
+          <p class="ff-context">If I could have a superpower...</p>
+          <p class="ff-text">...I would read other people's thoughts</p>
+          <h4 class="number">2</h4>
+          <p class="ff-context">Currently reading...</p>
+          <p class="ff-text">...Troubled Blood by Robert Galbraith</p>
+          <h4 class="number">3</h4>
+          <p class="ff-context">Cannot live without...</p>
+          <p class="ff-text">...Music</p>
+          <h4 class="number">4</h4>
+          <p class="ff-context">If I could have a conversation with a dead person it would be...</p>
+          <p class="ff-text">...Bob Marley</p>
+          <h4 class="number">5</h4>
+          <p class="ff-context">My favourite food is...</p>
+          <p class="ff-text">...Risotto</p>
+          <h4 class="number">6</h4>
+          <p class="ff-context">If I had to be trapped in a videogame I would be...</p>
+          <p class="ff-text">...a flying car in Rocket League</p>
+          <h4 class="number">7</h4>
+          <p class="ff-context">As a kid I wanted to be...</p>
+          <p class="ff-text">...Buzz Lightyear or pro soccer player</p>
+          <h4 class="number">8</h4>
+          <p class="ff-context">My favourite movie is...</p>
+          <p class="ff-text">...The Lion King (which I watched like a thousand times as a kid)</p>
+          <h4 class="number">9</h4>
+          <p class="ff-context">My favourite animal is...</p>
+          <p class="ff-text">...a Turtle</p>
+        </div>            
+      </div>
+    </div>
+
+      <div class="dark-light-toggle" id="toggle">
+        <div class="dark" id="dark">Dark-Mode</div>
+        <div class="light" id="light">Light-Mode</div>
+      </div>
+
       <section id="aboutme" class="aboutme">
-        <h2>About Me</h2>
-        <p>
+        <h2 class="section-header">About Me</h2>
+        <div class="about-text">
+          <p>
             Hello World! I am Rob Fenger, born july 9 1993 in Haarlem, the Netherlands. I studied philosophy at the university of Amsterdam, where I got my bachelor and master. 
-            Furthermore, I have a grade for teaching at highschool-level. But, as you can see, some things changed and now I changed course during the Coronaperiod and I started to learn how to code at <a href="https://www.codecademy.com/learn" target="_blank">Codecademy.com</a>, where I finished the course <em>Web Development</em>.
-        </p>
-        <p>
+            Furthermore, I have a grade for teaching at highschool-level. But, as you can see, some things changed and now I changed course during the Coronaperiod and I started to learn how to code at <a href="https://www.codecademy.com/learn" target="_blank" id="codecademy">Codecademy.com</a>, where I finished the course <em>Web Development</em>.
+          </p>
+          <p>
             Although the study of philosophy is known as an alpha-course, I am naturally more bèta-oriented. At my highschool I was enrolled in math B and D (which is a course for the math-nerds). 
             While I was studying philosophy I was tutoring math for highschool- and MBO/HBO-students. Also there is within the study philosophy a course Logic, which is based on structural thinking.
             This is to give structure to ones thinking and writing, and has proven very helpfull in learning to code.
-        </p>
-        <p>
+          </p>
+          <p>
             In my free time I like to read and write. Obviously I like to read the works of the great philosophers, but also novels once in a while. My writings consist of poetry and spoken word and musically I'm into rap music, which I write and record as well.
             Furthermore, I play soccer and like to cook some good and healthy foods.
-        </p>
-        <div class="typing">
-        <a href="" class="typewrite" data-period="2000" data-type='[ "Beauty is in the eye of the beholder.", "The Truth is a woman.", "Evil is the absence of Good, like Black is the absence of White.", "I Love to Develop." ]'>
-            <span class="wrap"></span>
-          </a>
+          </p>
         </div>
       </section>
+
       <section id="projects" class="projects">
-        <h2>Projects</h2>
-         
-          <div class="game">
-            <div class="gameheader">
-              <h3>The Joker's Game</h3>
-            </div>
-            <table class="instructions-row">
-                <tr><td class="instructions-number">1</td><td class="instructions-text">Hiding behind one of these cards is the Joker.</td></tr>
-                <tr><td class="instructions-number">2</td><td class="instructions-text">If you manage to avoid the Joker until you turn around the very last card, you win!</td></tr>
-                <tr><td class="instructions-number">3</td><td class="instructions-text">See if you can score a winning streak!</td></tr>
-            </table>
-            <div class="cardcovers">
-                <img src="Resources/cardcover.png" id="cover1" class="cardframe"/>
-                <img src="Resources/cardcover.png" id="cover2" class="cardframe"/>
-                <img src="Resources/cardcover.png" id="cover3" class="cardframe"/>
-            </div>
-            <div id="start" class="start-row"><button>Good Luck!</button></div>
-            <div class="gamequotes" id="winningquote">
-                <h3>~</h3>
-            </div>
-          </div>
-
+        <h2 class="section-header">Projects</h2>
           <div class="flexbox">
-          <div class="feyenoord-selectie flex">
-            <a href="https://robfenger.github.io/Feyenoord-Selectie/" target="_blank" class="text"><h1>Feyenoord-Selectie page</h1></a>
+            <div class="feyenoord-selectie flex-item">
+              <a href="https://robfenger.github.io/Feyenoord-Selectie/" target="_blank" class="text"><h2>Feyenoord-Selectie page</h2></a>
+            </div>
+            <div class="hire-to-inspire flex-item">
+              <a href="https://robfenger.github.io/HireToInspire/" target="_blank" class="text"><h2>Hire To Inspire homepage</h2></a>
+            </div>
+            <div class="architecture flex-item">
+              <a href="https://robfenger.github.io/Architecture/" target="_blank" class="text"><h2>Architecture Blog</h2></a>
+            </div>
+            <div class="tea-cozy flex-item">
+              <a href="https://robfenger.github.io/TeaCozy/" target="_blank" class="text"><h2>Tea Cozy</h2></a>
+            </div>
+          </div> 
+        
+        <div class="game">
+          <div class="gameheader">
+            <h3>The Joker's Game</h3>
           </div>
-          <div class="hire-to-inspire flex">
-            <a href="https://robfenger.github.io/HireToInspire/" target="_blank" class="text"><h1>Hire To Inspire homepage</h1></a>
+          <table class="instructions-row">
+              <tr><td class="instructions-number">1</td><td class="instructions-text">Hiding behind one of these cards is the Joker.</td></tr>
+              <tr><td class="instructions-number">2</td><td class="instructions-text">If you manage to avoid the Joker until you turn around the very last card, you win!</td></tr>
+              <tr><td class="instructions-number">3</td><td class="instructions-text">See if you can score a winning streak!</td></tr>
+          </table>
+          <div class="cardcovers">
+              <img src="Resources/cardcover.png" id="cover1" class="cardframe"/>
+              <img src="Resources/cardcover.png" id="cover2" class="cardframe"/>
+              <img src="Resources/cardcover.png" id="cover3" class="cardframe"/>
           </div>
-          <div class="architecture flex">
-            <a href="https://robfenger.github.io/Architecture/" target="_blank" class="text"><h1>Architecture Blog</h1></a>
+          <div id="start" class="start-row"><button>Good Luck!</button></div>
+          <div class="gamequotes" id="winningquote">
+              <h3>~</h3>
           </div>
-        </div> 
-        <div class="quote">
-            <h3>"Unless you know the code, it has no meaning"</h3>
-            <h4>~John Connoly</h4>
-        </div>
+        </div>       
 
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script.js"></script>        
       </section>
+
       <section id="skills" class="skills"> 
-        <h2>Skills</h2>
-        <div class="container">
-            <div class="child">
-                <h4>Code</h4>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-            <div class="child">
-                <h4>General</h4>
-                <ul>
-                    <li>Structural</li>
-                    <li>Creative</li>
-                    <li>Social</li>
-                    <li>Inquisitive</li>
-                </ul>
-            </div>
-        </div>
+        <h2 class="section-header">Skills</h2>
+        
+        <div class="quote">
+          <h3>"Unless you know the code, it has no meaning"</h3>
+          <h4>~John Connoly</h4>
+        </div>    
+                
+        <div class="skills-band one">
+          <div class="html-icon skill-icon"><img src="Resources/html5.svg"></div>
+          <div class="css-icon skill-icon"><img src="Resources/css3.svg"></div>
+          <div class="js-icon skill-icon"><img src="Resources/javascript.svg"></div>
+          <div class="react-icon skill-icon"><img src="Resources/react.svg"></div>
+          <div class="sql-icon skill-icon"><img src="Resources/sql.svg"></div>
+        </div>                            
+                
+        <div class="skills-band">
+          <div class="skills-text"><h4>Structural</h4><img src="Resources/structural.png" class="general-icon"></div>
+          <div class="skills-text"><h4>Creative</h4><img src="Resources/creative.png" class="general-icon"></div>
+          <div class="skills-text"><h4>Social</h4></div>
+          <div class="skills-text"><h4>Inquisitive</h4><img src="Resources/inquisitive.png" class="general-icon"></div>
+        </div>                 
       </section>
-      <div id="contact" class="contact">
-          <h2>Contact</h2>
-      </div>
+
+      <section id="contact" class="contact">
+        <h2 class="section-header">Contact</h2>
+        <div class="email"><p class=" contact-text bold inline">E-mail adress: </p><p class="inline">robfenger@gmail.com</p></div>
+        <div class="email"><p class=" contact-text bold inline">Phone number: </p><p class="inline">06-12321497</p></div>
+      </section>
     </main>
+    <footer>
+        <h5>--  2021 Rob Fenger Portfolio  --</h5>
+    </footer>
+  </div>
   </body>
 </html>
