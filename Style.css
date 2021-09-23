@@ -483,7 +483,9 @@ nav {
 
 
 .skills-band {
-    background-color: lightslategray;
+    background-image: url(Resources/papyrus.jpg);
+    background-color: rgba(160, 99, 49, 0.87);
+    background-blend-mode: luminosity;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -816,6 +818,194 @@ footer {
   }
 
   @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+    .navbar {
+        height: 82.5px;
+      }
+
+    nav {
+        visibility: hidden;
+    }
+
+    h1 {
+        font-size: 45px;
+        text-shadow: none;
+    }
+    
+    #icon-container {
+        visibility: visible;
+    }
+
+    .menu-icon {
+        width: 52.5px;
+        height: 7.5px;
+        margin: 9px 0;
+    }
+
+    #dropdown-menu {
+        top: 60px;
+        padding: 37.5px;
+        width: 300px;
+    }
+
+    .dd-menu-item {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .dark-light-toggle {
+        width: 146px;
+    }
+
+    .dark, .light {
+        padding: 6.6px;
+        font-size: 21px;
+    }
+
+    .section-header {
+        font-size: 60px;
+    }
+
+    .about-text {
+        font-size: 30px;
+        width: 65%;
+    }
+
+    .game {
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    .gameheader {
+        font-size: 21px;
+    }
+
+    .gamequotes {
+        font-size: 24px;
+    }
+
+    .instructions-row {
+        width: 80%;
+    }
+
+    .instructions-number {
+        font-size: 48px;
+    }
+
+    .instructions-text {
+        font-size: 20px;
+        padding: 14px;
+    }
+
+    .start-row {
+        width: 160px;
+        height: 66px;
+        font-size: 24px;
+        padding: 6.6px;
+    }
+
+    .quote {
+        width: 90%;
+    }
+
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .quote {
+        width: 75%;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (orientation: portrait) {
+    .front-bg {
+        height: 1320px;
+    }
+
+    .page {
+        top: 1320px;
+    }
+
+    .navbar {
+        height: 82.5px;
+      }
+
+    nav {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 45px;
+        text-shadow: none;
+    }
+
+    .section-header {
+        font-size: 55px;
+    }
+
+    .about-text {
+        font-size: 25px;
+    }
+
+    .game {
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    .gameheader {
+        font-size: 28px;
+    }
+
+    .gamequotes {
+        font-size: 32px;
+    }
+
+    .instructions-row {
+        width: 80%;
+    }
+
+    .instructions-number {
+        font-size: 60px;
+    }
+
+    .instructions-text {
+        font-size: 27px;
+        padding: 18.5px;
+    }
+
+    .start-row {
+        width: 213px;
+        height: 88px;
+        font-size: 32px;
+        padding: 8.8px;
+    }
+    
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (orientation: landscape) {
+    .front-bg {
+        height: 768px;
+    }
+
+    .page {
+        top: 768px;
+    }
+  }
+
+  /*@media only screen 
   and (min-width: 321px) {
     
 
@@ -940,7 +1130,7 @@ footer {
         height: 90px;
     }
   }
- 
+ */
   
 
 

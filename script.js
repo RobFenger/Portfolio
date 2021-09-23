@@ -31,6 +31,10 @@ let e = window.matchMedia("(max-height: 300px)");
 let f = window.matchMedia("(max-height: 200px)");
 let g = window.matchMedia("(min-device-width: 320px)");
 let h = window.matchMedia("(max-device-width: 480px)");
+let x = window.matchMedia("(min-device-width: 768px)");
+let y = window.matchMedia("(max-device-width: 1024px)");
+let portrait = window.matchMedia("(orientation: portrait)");
+let landscape = window.matchMedia("(orientation: landscape");
 
 
 
@@ -53,6 +57,10 @@ up.onclick = () => {
     page.style.top = '700px';
   } else if (g.matches && h.matches) {
     page.style.top = '1800px';
+  } else if (x.matches && y.matches && portrait.matches) {
+    page.style.top = '1320px';
+  } else if (x.matches && y.matches && landscape.matches) {
+    page.style.top = '768px';
   }
 }
 
