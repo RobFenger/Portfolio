@@ -1060,12 +1060,12 @@ footer {
 
     .down {
         font-size: 175px;
-        bottom: 0px;
+        bottom: 50px;
     }
 
     @keyframes upDown {
         0% {
-            bottom: 0px;
+            bottom: 50px;
           }
         100% {
             transform: translateY(-50px);
@@ -1078,6 +1078,7 @@ footer {
 
     .dark-light-toggle {
         width: 220px;
+        top: 120px;
     }
 
     .dark, .light {
@@ -1214,6 +1215,10 @@ footer {
         font-size: 21px;
     }
 
+    .fun-facts {
+        display: none;
+    }
+
     .section-header {
         font-size: 60px;
     }
@@ -1274,6 +1279,14 @@ footer {
         width: 75%;
     }
 
+    .fun-facts {
+        display: none;
+    }
+
+    .cardframe {
+        height: 200px;
+    }
+
   }
 
   @media only screen 
@@ -1302,6 +1315,10 @@ footer {
         text-shadow: none;
     }
 
+    .fun-facts {
+        display: none;
+    }
+
     .section-header {
         font-size: 55px;
     }
@@ -1317,6 +1334,9 @@ footer {
 
     .gameheader {
         font-size: 28px;
+        background-image: url(Resources/papyrus.jpg);
+        background-color: rgba(160, 99, 49, 0.87);
+        background-blend-mode: multiply;
     }
 
     .gamequotes {
@@ -1342,9 +1362,6 @@ footer {
         font-size: 32px;
         padding: 8.8px;
     }
-
-    
-    
   }
 
   @media only screen 
@@ -1360,6 +1377,9 @@ footer {
         top: 768px;
     }
 
+    .fun-facts {
+        display: none;
+    }
     
   }
 
