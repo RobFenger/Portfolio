@@ -104,6 +104,7 @@ nav {
     width: 100px;
     text-align: center;
     clip-path: polygon(30% 0%, 100% 0, 100% 30%, 100% 85%, 70% 100%, 30% 100%, 0 100%, 0 15%);
+    -webkit-clip-path: polygon(30% 0%, 100% 0, 100% 30%, 100% 85%, 70% 100%, 30% 100%, 0 100%, 0 15%);
   }
 
   .dd-menu-item {
@@ -132,6 +133,7 @@ nav {
     background-color: rgba(160, 99, 49, 0.87);
     background-blend-mode: multiply;
     clip-path: polygon(30% 0, 100% 0, 100% 20%, 100% 60%, 50% 100%, 20% 100%, 0 100%, 0 20%);
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 20%, 100% 60%, 50% 100%, 20% 100%, 0 100%, 0 20%);
     position: fixed;
     height: 100%;
     background-size: cover;
@@ -336,6 +338,7 @@ nav {
     height: 1000px;
     transition: transform 2.5s ease-out;
     clip-path: polygon(10% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 5%);
+    -webkit-clip-path: polygon(10% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 5%);
     font-family: 'Permanent Marker';
     border: 2px solid maroon;
 }
