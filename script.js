@@ -72,6 +72,7 @@ let toggle = document.getElementById("toggle");
 let header = document.getElementById("header");
 let menuItems = document.getElementsByClassName("menu-item");
 let codecademy = document.getElementById("codecademy");
+let certificate = document.getElementById("certificate");
 let menuIcon = document.getElementsByClassName("menu-icon");
 let robFenger = document.getElementById("h1");
 let dropdownItems = document.getElementsByClassName("dd-menu-item");
@@ -84,6 +85,7 @@ darkButton.onclick = () => {
   up.style.color = 'snow';
   header.style.backgroundColor = 'black';
   codecademy.style.color = 'snow';
+  certificate.style.color = 'snow';
   dropdownMenu.style.backgroundColor = 'black';
   let i;
   for (i = 0; i < menuItems.length; i++) {
@@ -109,6 +111,7 @@ lightButton.onclick = () => {
   up.style.color = "black";
   header.style.backgroundColor = 'snow';
   codecademy.style.color = 'black';
+  certificate.style.color = 'black';
   dropdownMenu.style.backgroundColor = 'snow';
   let i;
   for (i = 0; i < menuItems.length; i++) {
@@ -138,6 +141,89 @@ up.onmouseleave = () => {
     up.style.color = 'snow';
   }
 }
+
+codecademy.onmouseenter = () => {
+  codecademy.style.color = 'lightseagreen';
+}
+
+certificate.onmouseenter = () => {
+  certificate.style.color = 'lightseagreen';
+}
+
+codecademy.onmouseleave = () => {
+  if (page.style.backgroundColor === 'snow') {
+    codecademy.style.color = 'black';
+  } else {
+    codecademy.style.color = 'snow';
+  }
+}
+
+certificate.onmouseleave = () => {
+  if (page.style.backgroundColor === 'snow') {
+    certificate.style.color = 'black';
+  } else {
+    certificate.style.color = 'snow';
+  }
+}
+
+
+
+let menuAbout = document.getElementById("menu-about");
+let menuProjects = document.getElementById("menu-projects");
+let menuSkills = document.getElementById("menu-skills");
+let menuContact = document.getElementById("menu-contact");
+
+menuAbout.onmouseenter = () => {
+  menuAbout.style.color = 'lightseagreen';
+}
+
+menuProjects.onmouseenter = () => {
+  menuProjects.style.color = 'lightseagreen';
+}
+
+menuSkills.onmouseenter = () => {
+  menuSkills.style.color = 'lightseagreen';
+}
+
+menuContact.onmouseenter = () => {
+  menuContact.style.color = 'lightseagreen';
+}
+
+menuAbout.onmouseleave = () => {
+  if (page.style.backgroundColor === 'snow') {
+    menuAbout.style.color = 'black';
+  } else {
+    menuAbout.style.color = 'snow';
+  }
+}
+
+menuProjects.onmouseleave = () => {
+  if (page.style.backgroundColor === 'snow') {
+    menuProjects.style.color = 'black';
+  } else {
+    menuProjects.style.color = 'snow';
+  }
+}
+
+menuSkills.onmouseleave = () => {
+  if (page.style.backgroundColor === 'snow') {
+    menuSkills.style.color = 'black';
+  } else {
+    menuSkills.style.color = 'snow';
+  }
+}
+
+menuContact.onmouseleave = () => {
+  if (page.style.backgroundColor === 'snow') {
+    menuContact.style.color = 'black';
+  } else {
+    menuContact.style.color = 'snow';
+  }
+}
+
+
+
+
 
 
 
@@ -249,4 +335,190 @@ function gameOver (status) {
 
 startRound();
 
-  
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line = entry.target.querySelector('.line1');
+
+    if (entry.isIntersecting) {
+      line.classList.add('line1-animation');
+     return; 
+    }
+
+    line.classList.remove('line1-animation');
+  });
+});
+
+observer.observe(document.querySelector('.line1-wrapper'));
+
+const observer2 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line2 = entry.target.querySelector('.line2');
+
+    if (entry.isIntersecting) {
+      line2.classList.add('line2-animation');
+     return; 
+    }
+
+    line2.classList.remove('line2-animation');
+  });
+});
+
+observer2.observe(document.querySelector('.line2-wrapper'));
+
+const observer3 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line3 = entry.target.querySelector('.line3');
+
+    if (entry.isIntersecting) {
+      line3.classList.add('line3-animation');
+     return; 
+    }
+
+    line3.classList.remove('line3-animation');
+  });
+});
+
+observer3.observe(document.querySelector('.line3-wrapper'));
+
+
+const observer4 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line4 = entry.target.querySelector('.line4');
+
+    if (entry.isIntersecting) {
+      line4.classList.add('line4-animation');
+     return; 
+    }
+
+    line4.classList.remove('line4-animation');
+  });
+});
+
+observer4.observe(document.querySelector('.line4-wrapper'));
+
+const observer8 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line8 = entry.target.querySelector('.line8');
+
+    if (entry.isIntersecting) {
+      line8.classList.add('line8-animation');
+     return; 
+    }
+
+    line8.classList.remove('line8-animation');
+  });
+});
+
+observer8.observe(document.querySelector('.line8-wrapper'));
+
+
+const observer6 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line6 = entry.target.querySelector('.line6');
+
+    if (entry.isIntersecting) {
+      line6.classList.add('line6-animation');
+     return; 
+    }
+
+    line6.classList.remove('line6-animation');
+  });
+});
+
+observer6.observe(document.querySelector('.line6-wrapper'));
+
+
+const observer7 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line7 = entry.target.querySelector('.line7');
+
+    if (entry.isIntersecting) {
+      line7.classList.add('line7-animation');
+     return; 
+    }
+
+    line7.classList.remove('line7-animation');
+  });
+});
+
+observer7.observe(document.querySelector('.line7-wrapper'));
+
+
+const observer11 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line11 = entry.target.querySelector('.line11');
+
+    if (entry.isIntersecting) {
+      line11.classList.add('line11-animation');
+     return; 
+    }
+
+    line11.classList.remove('line11-animation');
+  });
+});
+
+observer11.observe(document.querySelector('.line11-wrapper'));
+
+
+const observer12 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line12 = entry.target.querySelector('.line12');
+
+    if (entry.isIntersecting) {
+      line12.classList.add('line12-animation');
+     return; 
+    }
+
+    line12.classList.remove('line12-animation');
+  });
+});
+
+observer12.observe(document.querySelector('.line12-wrapper'));
+
+
+const observer9 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line9 = entry.target.querySelector('.line9');
+
+    if (entry.isIntersecting) {
+      line9.classList.add('line9-animation');
+     return; 
+    }
+
+    line9.classList.remove('line9-animation');
+  });
+});
+
+observer9.observe(document.querySelector('.line9-wrapper'));
+
+
+const observer10 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line10 = entry.target.querySelector('.line10');
+
+    if (entry.isIntersecting) {
+      line10.classList.add('line10-animation');
+     return; 
+    }
+
+    line10.classList.remove('line10-animation');
+  });
+});
+
+observer10.observe(document.querySelector('.line10-wrapper'));
+
+
+const observer5 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const line5 = entry.target.querySelector('.line5');
+
+    if (entry.isIntersecting) {
+      line5.classList.add('line5-animation');
+     return; 
+    }
+
+    line5.classList.remove('line5-animation');
+  });
+});
+
+observer5.observe(document.querySelector('.line5-wrapper'));

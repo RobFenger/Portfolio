@@ -184,6 +184,84 @@ nav {
     overflow: hidden;
 }
 
+.line1 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    width: 3px;
+    background-image: url(Resources/papyrus.jpg);
+    height: 350px;
+    
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line1-animation {
+        animation: lineOnScroll 1.5s;
+    }
+}
+
+@keyframes lineOnScroll {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 350px;
+    }
+}
+
+.line2 {
+    position: absolute;
+    top: 0;
+    right: 19%;
+    width: 2px;
+    background-image: url(Resources/papyrus.jpg);
+    height: 300px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line2-animation {
+        animation: line2OnScroll 1s;
+    }
+}
+
+@keyframes line2OnScroll {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 300px;
+    }
+}
+
+.line3 {
+    position: absolute;
+    top: 0;
+    right: 18%;
+    width: 1px;
+    background-image: url(Resources/papyrus.jpg);
+    height: 250px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line3-animation {
+        animation: line3OnScroll 0.5s;
+    }
+}
+
+@keyframes line3OnScroll {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 250px;
+    }
+}
+
+
+
 .up {
     font-size: 100px;
     color: snow;
@@ -221,6 +299,7 @@ nav {
     float: right;
     margin-top: 10px;
     margin-right: 10px;
+    z-index: 6;
 }
 
 .dark {
@@ -300,7 +379,59 @@ nav {
 
 .aboutme {
     display: inline-block;
+    margin-bottom: 100px;
+    position: relative;
+    
 }
+
+.line4 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 1px;
+    width: 35%;
+    position: absolute;
+    bottom: -20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line4-animation {
+        animation: line4OnScroll 1s;
+    }
+}
+
+@keyframes line4OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 35%;
+    }
+}
+
+.line8 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 2px;
+    width: 50%;
+    position:absolute;
+    bottom: -30px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line8-animation {
+        animation: line8OnScroll 1.5s;
+    }
+}
+
+@keyframes line8OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
 
 .section-header {
     font-family: 'Yanone Kaffeesatz';
@@ -318,8 +449,63 @@ nav {
     color: white;
 }
 
+#certificate {
+    color: white;
+}
+
 .projects {
     width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.line6 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    right: 0px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line6-animation {
+        animation: line6OnScroll 1.5s;
+    }
+}
+
+@keyframes line6OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+.line7 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 1px;
+    width: 20%;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line7-animation {
+        animation: line7OnScroll 1s;
+    }
+}
+
+@keyframes line7OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
 }
 
 .flexbox {
@@ -338,7 +524,7 @@ nav {
     transition: background-size 1.5s linear;
 }
 
-.flex:hover {
+.flex-item:hover {
     background-size: 115%;
 }
 
@@ -441,6 +627,7 @@ nav {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10%;
+    object-fit: contain;
 }
 
 .start-row {
@@ -465,22 +652,123 @@ nav {
     font-weight: bold;
 }
 
+.line11 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    bottom: -20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line11-animation {
+        animation: line11OnScroll 1.5s;
+    }
+}
+
+@keyframes line11OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+.line12 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 1px;
+    width: 20%;
+    position:absolute;
+    bottom: -30px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line12-animation {
+        animation: line12OnScroll 1s;
+    }
+}
+
+@keyframes line12OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+
+.skills {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.line9 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line9-animation {
+        animation: line9OnScroll 1.5s;
+    }
+}
+
+@keyframes line9OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.line10 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 1px;
+    width: 35%;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line10-animation {
+        animation: line10OnScroll 1s;
+    }
+}
+
+@keyframes line10OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 35%;
+    }
+}
+
 .quote {
     width: 50%;
     margin: auto;
     margin-bottom: 25px;
-    border: 6px ridge aquamarine;
+    border: 6px ridge maroon;
     border-radius: 20px;
     background-image: url(Resources/papyrus.jpg);
-    opacity: 0.75;
+    opacity: 0.9;
     text-align: center;
     color: black;
     margin-top: 25px;
     font-family: 'Meddon';
     font-size: 20px;
 }
-
-
 
 .skills-band {
     background-image: url(Resources/papyrus.jpg);
@@ -499,7 +787,7 @@ nav {
     height: 60px;
     padding-top: 25%;
     padding-bottom: 25%;
-    transition: transform 1s ease-out;
+    transition: transform 0.5s;
 }
 
 .skill-icon img:hover {
@@ -515,6 +803,11 @@ nav {
 .general-icon {
     height: 45px;
     padding-bottom: 20%;
+    transition: transform 0.5s;
+}
+
+.general-icon:hover {
+    transform: scale(1.2);
 }
 
 .bold {
@@ -525,8 +818,36 @@ nav {
     display: inline;
 }
 
-.contact-text {
+.email {
     margin-left: 20%;
+}
+
+.contact-text {
+    margin-left: 10px;
+}
+
+.line5 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 3px;
+    width: 25%;
+    position: absolute;
+    right: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .line5-animation {
+        animation: line5OnScroll 1.5s;
+    }
+}
+
+@keyframes line5OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 25%;
+    }
 }
 
 footer {
@@ -677,6 +998,10 @@ footer {
     .about-text {
         width: 60%;
     }
+
+    .line1, .line2, .line3 {
+        visibility: hidden;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -730,6 +1055,19 @@ footer {
         top: 1800px;
     }
 
+    .down {
+        font-size: 175px;
+        bottom: -50px;
+    }
+
+    @keyframes upDown {
+        0% {
+            bottom: -50px;
+          }
+        100% {
+            transform: translateY(-50px);
+          }
+        }
 
     .fun-facts {
         display: none;
@@ -814,6 +1152,14 @@ footer {
 
     .general-icon {
         height: 90px;
+    }
+
+    .line1, .line2, .line3 {
+        visibility: hidden;
+    }
+
+    .email {
+        margin-left: 5%;
     }
   }
 
@@ -911,6 +1257,10 @@ footer {
         width: 90%;
     }
 
+    .line1, .line2, .line3 {
+        visibility: hidden;
+    }
+
   }
 
   @media only screen 
@@ -920,6 +1270,7 @@ footer {
     .quote {
         width: 75%;
     }
+
   }
 
   @media only screen 
@@ -988,6 +1339,8 @@ footer {
         font-size: 32px;
         padding: 8.8px;
     }
+
+    
     
   }
 
@@ -1003,142 +1356,9 @@ footer {
     .page {
         top: 768px;
     }
+
+    
   }
 
-  /*@media only screen 
-  and (min-width: 321px) {
-    
-
-    nav {
-        visibility: hidden;
-    }
-
-    
-    
-    #icon-container {
-        visibility: visible;
-    }
-
-    .menu-icon {
-        width: 70px;
-        height: 10px;
-        margin: 12px 0;
-    }
-
-    #dropdown-menu {
-        top: 80px;
-        padding: 50px;
-        width: 400px;
-    }
-
-    .dd-menu-item {
-        font-size: 80px;
-        line-height: 100px;
-    }
-
-    .front-bg {
-        height: 1800px;
-    }
-
-    .page {
-        top: 1800px;
-    }
-
-
-    .fun-facts {
-        display: none;
-    }
-
-    .dark-light-toggle {
-        width: 220px;
-    }
-
-    .dark, .light {
-        padding: 10px;
-        font-size: 32px;
-    }
-
-    .section-header {
-        font-size: 80px;
-    }
-
-    .about-text {
-        font-size: 40px;
-        width: 65%;
-    }
-
-    .flex-item {
-        width: 620px;
-        height: 450px;
-    }
-
-    .text {
-        font-size: 50px;
-    }
-
-    .game {
-        width: 90%;
-        margin-top: 50px;
-    }
-
-    .gameheader {
-        font-size: 32px;
-    }
-
-    .gamequotes {
-        font-size: 36px;
-    }
-
-    .instructions-row {
-        width: 80%;
-    }
-
-    .instructions-number {
-        font-size: 72px;
-    }
-
-    .instructions-text {
-        font-size: 32px;
-        padding: 20px;
-    }
-
-    .start-row {
-        width: 240px;
-        height: 100px;
-        font-size: 36px;
-        padding: 10px;
-    }
-
-    .quote {
-        width: 90%;
-        font-size: 40px;
-    }
-
-    .one {
-        margin-top: 50px;
-    }
-
-    .skill-icon img {
-        height: 120px;
-    }
-
-    .skills-text {
-        font-size: 32px;
-    }
-
-    .general-icon {
-        height: 90px;
-    }
-  }
- */
   
-
-
-  
-  
-    
-  
-
-  
-
 
