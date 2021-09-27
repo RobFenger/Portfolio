@@ -1302,6 +1302,39 @@ footer {
   }
 
   @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .front-bg {
+        height: 2120px;
+    }
+
+    .page {
+        top: 2120px;
+    }
+}
+
+  @media only screen 
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .down {
+        bottom: 350px;
+    }
+
+    @keyframes upDown {
+        0% {
+            bottom: 350px;
+          }
+        100% {
+            transform: translateY(-100px);
+          }
+        }
+  }
+
+  @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {

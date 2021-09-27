@@ -31,15 +31,26 @@ let e = window.matchMedia("(max-height: 300px)");
 let f = window.matchMedia("(max-height: 200px)");
 let g = window.matchMedia("(min-device-width: 320px)");
 let h = window.matchMedia("(max-device-width: 480px)");
+let l = window.matchMedia("(min-device-width: 375px)");
+let m = window.matchMedia("(max-device-width: 667px)");
+let n = window.matchMedia("(max-device-width: 812px)");
+let o = window.matchMedia("(-webkit-min-device-pixel-ratio: 3)")
 let x = window.matchMedia("(min-device-width: 768px)");
 let y = window.matchMedia("(max-device-width: 1024px)");
 let portrait = window.matchMedia("(orientation: portrait)");
-let landscape = window.matchMedia("(orientation: landscape");
+let landscape = window.matchMedia("(orientation: landscape)");
 
 
 
 down.onclick = () => {
   page.style.top = '55px';
+  if (g.matches && h.matches) {
+    page.style.top = '110px';
+  } else if (l.matches && m.matches && landscape.matches) {
+    page.style.top = '82.5px';
+  } else if (x.matches && y.matches && portrait.matches) {
+    page.style.top = '82.5px';
+  }
 }
 
 up.onclick = () => {
@@ -61,7 +72,7 @@ up.onclick = () => {
     page.style.top = '1320px';
   } else if (x.matches && y.matches && landscape.matches) {
     page.style.top = '768px';
-  }
+  } 
 }
 
 
