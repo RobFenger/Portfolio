@@ -140,14 +140,24 @@ nav {
 }
 
 .portret {
-    border-radius: 50%;
-    transition: transform 2s ease-out;
-    visibility: hidden;
+    position: relative;
+    top: 55px;
+    left: 7%;
+    width: 245.67px;
+    height: 287.67px;
+    border-radius: 5px;
+    animation: wipe-enter 1s;
 }
 
-.portret:hover {
-    transform: scale(1.05);
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
 }
+
 
 .down {
     font-size: 100px;
@@ -1072,6 +1082,12 @@ footer {
           }
         }
 
+    .portret {
+        width: 368.5px;
+        height: 431.5px;
+        top: 110px;
+    }
+
     .fun-facts {
         display: none;
     }
@@ -1206,6 +1222,10 @@ footer {
         line-height: 75px;
     }
 
+    .portret {
+        top: 82.5px;
+    }
+
     .dark-light-toggle {
         width: 146px;
     }
@@ -1272,6 +1292,16 @@ footer {
   }
 
   @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    .portret {
+        left: 10%;
+    }
+  }
+
+  @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
@@ -1313,6 +1343,11 @@ footer {
     h1 {
         font-size: 45px;
         text-shadow: none;
+    }
+
+    .portret {
+        top: 82.5px;
+        left: 10%;
     }
 
     .fun-facts {

@@ -522,3 +522,4 @@ const observer5 = new IntersectionObserver(entries => {
 });
 
 observer5.observe(document.querySelector('.line5-wrapper'));
+
