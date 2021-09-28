@@ -21,7 +21,7 @@ document.onmouseup = (event) => {
 let down = document.getElementById("down");
 let page = document.getElementById("page");
 let up = document.getElementById("up");
-let front = document.getElementById("front");
+
 
 let a = window.matchMedia("(max-height: 700px)");
 let b = window.matchMedia("(max-height: 600px)");
@@ -87,13 +87,16 @@ let certificate = document.getElementById("certificate");
 let menuIcon = document.getElementsByClassName("menu-icon");
 let robFenger = document.getElementById("h1");
 let dropdownItems = document.getElementsByClassName("dd-menu-item");
+let front = document.getElementById("front");
 
 
 darkButton.onclick = () => {
+  front.style.backgroundColor = 'black';
   page.style.color = 'snow';
   page.style.backgroundColor = 'black';
   toggle.style.border = 'solid white 1px';
   up.style.color = 'snow';
+  down.style.color = 'snow';
   header.style.backgroundColor = 'black';
   codecademy.style.color = 'snow';
   certificate.style.color = 'snow';
@@ -115,11 +118,13 @@ darkButton.onclick = () => {
   }
 }
 
-lightButton.onclick = () => {  
+lightButton.onclick = () => {
+  front.style.backgroundColor = 'snow'; 
   page.style.color = 'black';
   page.style.backgroundColor = 'snow';
   toggle.style.border = 'solid black 1px';
   up.style.color = "black";
+  down.style.color = 'black';
   header.style.backgroundColor = 'snow';
   codecademy.style.color = 'black';
   certificate.style.color = 'black';
@@ -150,6 +155,18 @@ up.onmouseleave = () => {
     up.style.color = 'black';
   } else {
     up.style.color = 'snow';
+  }
+}
+
+down.onmouseenter = () => {
+  down.style.color = 'lightseagreen';
+}
+
+down.onmouseleave = () => {
+  if (page.style.backgroundColor === 'snow') {
+    down.style.color = 'black';
+  } else {
+    down.style.color = 'snow';
   }
 }
 
