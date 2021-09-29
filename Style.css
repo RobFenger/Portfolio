@@ -10,7 +10,6 @@ body {
 .navbar {
     position: fixed;
     z-index: 7;
-    border-bottom: 3px solid black;
     width: 100%;
     height: 55px;
     top: 0;
@@ -470,6 +469,7 @@ nav {
     width: 100%;
     margin-bottom: 100px;
     position: relative;
+    padding-top: 55px;
 }
 
 .line6 {
@@ -717,6 +717,7 @@ nav {
 .skills {
     margin-bottom: 100px;
     position: relative;
+    padding-top: 55px;
 }
 
 .line9 {
@@ -1162,6 +1163,14 @@ footer {
         margin-top: 50px;
     }
 
+    .projects {
+        padding-top: 110px;
+    }
+
+    .skills {
+        padding-top: 110px;
+    }
+
     .skill-icon img {
         height: 120px;
     }
@@ -1287,6 +1296,14 @@ footer {
 
     .line1, .line2, .line3 {
         visibility: hidden;
+    }
+
+    .projects {
+        padding-top: 82.5px;
+    }
+
+    .skills {
+        padding-top: 82.5px;
     }
 
   }
@@ -1429,6 +1446,14 @@ footer {
         height: 88px;
         font-size: 32px;
         padding: 8.8px;
+    }
+
+    .projects {
+        padding-top: 82.5px;
+    }
+
+    .skills {
+        padding-top: 82.5px;
     }
   }
 
