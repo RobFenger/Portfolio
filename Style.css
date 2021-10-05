@@ -1126,9 +1126,15 @@ footer {
         width: 65%;
     }
 
+    .language {
+        font-size: 35px;
+        top: -100px;
+    }
+
     .flex-item {
         width: 620px;
         height: 450px;
+        margin-bottom: 75px;
     }
 
     .text {
@@ -1269,6 +1275,10 @@ footer {
     .about-text {
         font-size: 30px;
         width: 65%;
+    }
+
+    .language {
+        font-size: 25px;
     }
 
     .game {
@@ -1424,6 +1434,10 @@ footer {
 
     .about-text {
         font-size: 25px;
+    }
+
+    .language {
+        font-size: 20px;
     }
 
     .game {
