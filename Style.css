@@ -541,6 +541,12 @@ nav {
     background-size: 115%;
 }
 
+.language {
+    position: absolute;
+    top: -50px;
+    font-style: italic;
+}
+
 .text {
     position: absolute;
     top: 35%;
@@ -582,6 +588,14 @@ nav {
 
 .tea-cozy {
     background-image: url("Resources/TeaCozy.png");
+    background-color: lightseagreen;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.animal-fun-facts {
+    background-image: url("Resources/AnimalFunFacts.png");
     background-color: lightseagreen;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
