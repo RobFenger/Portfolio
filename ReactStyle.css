@@ -125,7 +125,7 @@ nav {
   }
 
 .react-exercises {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .flexbox {
@@ -138,11 +138,10 @@ nav {
     width: 375px;
     height: 250px;
     border: solid white 1px;
-    margin-top: 10px;
+    margin: 20px;
     position: relative;
     background-size: 100%;
     transition: background-size 1.5s linear;
-    margin-left: 10px;
 }
 
 .flex-item:hover {
