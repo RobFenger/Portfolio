@@ -187,6 +187,88 @@ nav {
     object-fit: cover;
 }
 
+.line-container {
+    position: relative;
+    margin-top: 50px;
+}
+
+.line4 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 1px;
+    width: 35%;
+    position: absolute;
+    animation: line4OnScroll 1s;
+}
+
+@keyframes line4OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 35%;
+    }
+}
+
+.line8 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 2px;
+    width: 50%;
+    position:absolute;
+    top: 10px;
+    animation: line8OnScroll 1.5s;
+}
+
+@keyframes line8OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.line6 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    animation: line6OnScroll 1.5s;
+}
+
+@keyframes line6OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+.line7 {
+    background-image: url(Resources/papyrus.jpg);
+    height: 1px;
+    width: 20%;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    animation: line7OnScroll 1s;
+}
+
+@keyframes line7OnScroll {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     nav {
         visibility: hidden;
