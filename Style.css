@@ -570,6 +570,14 @@ nav {
     object-fit: cover;
   }
 
+.appointment-planner {
+    background-image: url("Resources/appointment-planner.png");
+    background-color: lightseagreen;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
 .hire-to-inspire {
     background-image: url("Resources/HireToInspire.png");
     background-color: lightseagreen;
@@ -594,7 +602,7 @@ nav {
     object-fit: cover;
 }
 
-.animal-fun-facts {
+.react-exercises {
     background-image: url("Resources/AnimalFunFacts.png");
     background-color: lightseagreen;
     background-blend-mode: multiply;
