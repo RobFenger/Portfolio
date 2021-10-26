@@ -363,191 +363,31 @@ function gameOver (status) {
 
 startRound();
 
-const observer = new IntersectionObserver(entries => {
+
+const lineMachine = (line, animation, wrapper) => {
+  const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    const line = entry.target.querySelector('.line1');
-
+    const lineNumber = entry.target.querySelector(line);
     if (entry.isIntersecting) {
-      line.classList.add('line1-animation');
-     return; 
+      lineNumber.classList.add(animation);
+      return;
     }
-
-    line.classList.remove('line1-animation');
+    lineNumber.classList.remove(animation);
   });
 });
+  observer.observe(document.querySelector(wrapper));
+}
 
-observer.observe(document.querySelector('.line1-wrapper'));
-
-const observer2 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line2 = entry.target.querySelector('.line2');
-
-    if (entry.isIntersecting) {
-      line2.classList.add('line2-animation');
-     return; 
-    }
-
-    line2.classList.remove('line2-animation');
-  });
-});
-
-observer2.observe(document.querySelector('.line2-wrapper'));
-
-const observer3 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line3 = entry.target.querySelector('.line3');
-
-    if (entry.isIntersecting) {
-      line3.classList.add('line3-animation');
-     return; 
-    }
-
-    line3.classList.remove('line3-animation');
-  });
-});
-
-observer3.observe(document.querySelector('.line3-wrapper'));
-
-
-const observer4 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line4 = entry.target.querySelector('.line4');
-
-    if (entry.isIntersecting) {
-      line4.classList.add('line4-animation');
-     return; 
-    }
-
-    line4.classList.remove('line4-animation');
-  });
-});
-
-observer4.observe(document.querySelector('.line4-wrapper'));
-
-const observer8 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line8 = entry.target.querySelector('.line8');
-
-    if (entry.isIntersecting) {
-      line8.classList.add('line8-animation');
-     return; 
-    }
-
-    line8.classList.remove('line8-animation');
-  });
-});
-
-observer8.observe(document.querySelector('.line8-wrapper'));
-
-
-const observer6 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line6 = entry.target.querySelector('.line6');
-
-    if (entry.isIntersecting) {
-      line6.classList.add('line6-animation');
-     return; 
-    }
-
-    line6.classList.remove('line6-animation');
-  });
-});
-
-observer6.observe(document.querySelector('.line6-wrapper'));
-
-
-const observer7 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line7 = entry.target.querySelector('.line7');
-
-    if (entry.isIntersecting) {
-      line7.classList.add('line7-animation');
-     return; 
-    }
-
-    line7.classList.remove('line7-animation');
-  });
-});
-
-observer7.observe(document.querySelector('.line7-wrapper'));
-
-
-const observer11 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line11 = entry.target.querySelector('.line11');
-
-    if (entry.isIntersecting) {
-      line11.classList.add('line11-animation');
-     return; 
-    }
-
-    line11.classList.remove('line11-animation');
-  });
-});
-
-observer11.observe(document.querySelector('.line11-wrapper'));
-
-
-const observer12 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line12 = entry.target.querySelector('.line12');
-
-    if (entry.isIntersecting) {
-      line12.classList.add('line12-animation');
-     return; 
-    }
-
-    line12.classList.remove('line12-animation');
-  });
-});
-
-observer12.observe(document.querySelector('.line12-wrapper'));
-
-
-const observer9 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line9 = entry.target.querySelector('.line9');
-
-    if (entry.isIntersecting) {
-      line9.classList.add('line9-animation');
-     return; 
-    }
-
-    line9.classList.remove('line9-animation');
-  });
-});
-
-observer9.observe(document.querySelector('.line9-wrapper'));
-
-
-const observer10 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line10 = entry.target.querySelector('.line10');
-
-    if (entry.isIntersecting) {
-      line10.classList.add('line10-animation');
-     return; 
-    }
-
-    line10.classList.remove('line10-animation');
-  });
-});
-
-observer10.observe(document.querySelector('.line10-wrapper'));
-
-
-const observer5 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const line5 = entry.target.querySelector('.line5');
-
-    if (entry.isIntersecting) {
-      line5.classList.add('line5-animation');
-     return; 
-    }
-
-    line5.classList.remove('line5-animation');
-  });
-});
-
-observer5.observe(document.querySelector('.line5-wrapper'));
+lineMachine('.line1', 'line1-animation', '.line1-wrapper');
+lineMachine('.line2', 'line2-animation', '.line2-wrapper');
+lineMachine('.line3', 'line3-animation', '.line3-wrapper');
+lineMachine('.line4', 'line4-animation', '.line4-wrapper');
+lineMachine('.line5', 'line5-animation', '.line5-wrapper');
+lineMachine('.line6', 'line6-animation', '.line6-wrapper');
+lineMachine('.line7', 'line7-animation', '.line7-wrapper');
+lineMachine('.line8', 'line8-animation', '.line8-wrapper');
+lineMachine('.line9', 'line9-animation', '.line9-wrapper');
+lineMachine('.line10', 'line10-animation', '.line10-wrapper');
+lineMachine('.line11', 'line11-animation', '.line11-wrapper');
+lineMachine('.line12', 'line12-animation', '.line12-wrapper');
 
