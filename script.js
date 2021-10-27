@@ -89,6 +89,10 @@ let robFenger = document.getElementById("h1");
 let dropdownItems = document.getElementsByClassName("dd-menu-item");
 let front = document.getElementById("front");
 
+const populateStorage = (key, value) => {
+  localStorage.setItem(key, value);
+}
+
 
 darkButton.onclick = () => {
   front.style.backgroundColor = 'black';
@@ -119,9 +123,12 @@ darkButton.onclick = () => {
 }
 
 lightButton.onclick = () => {
-  front.style.backgroundColor = 'snow'; 
-  page.style.color = 'black';
-  page.style.backgroundColor = 'snow';
+  //front.style.backgroundColor = 'snow'; 
+  populateStorage("front.style.backgroundColor", "snow");
+  //page.style.color = 'black';
+  populateStorage("page.style.color", "black");
+  //page.style.backgroundColor = 'snow';
+  populateStorage("page.style.backgroundColor", "snow");
   toggle.style.border = 'solid black 1px';
   up.style.color = "black";
   down.style.color = 'black';
@@ -362,6 +369,7 @@ function gameOver (status) {
 };
 
 startRound();
+
 
 
 const lineMachine = (line, animation, wrapper) => {
