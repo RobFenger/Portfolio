@@ -88,69 +88,95 @@ let menuIcon = document.getElementsByClassName("menu-icon");
 let robFenger = document.getElementById("h1");
 let dropdownItems = document.getElementsByClassName("dd-menu-item");
 let front = document.getElementById("front");
+let reactHeader = document.getElementById("react-header");
 
 const populateStorage = (key, value) => {
   localStorage.setItem(key, value);
 }
 
+const setStyles = (key) => {
+  let style = localStorage.getItem(key);
+  return style;
+}
 
-darkButton.onclick = () => {
-  front.style.backgroundColor = 'black';
-  page.style.color = 'snow';
-  page.style.backgroundColor = 'black';
-  toggle.style.border = 'solid white 1px';
-  up.style.color = 'snow';
-  down.style.color = 'snow';
-  header.style.backgroundColor = 'black';
-  codecademy.style.color = 'snow';
-  certificate.style.color = 'snow';
-  dropdownMenu.style.backgroundColor = 'black';
+const toggleStorage = () => {
+if (localStorage.getItem("headerBackgroundColor")) {
+  front.style.backgroundColor = setStyles('frontBackgroundColor');
+  page.style.color = setStyles("pageColor");
+  page.style.backgroundColor = setStyles("pageBackgroundColor");
+  toggle.style.border = setStyles("toggleBorder");
+  up.style.color = setStyles("upColor");
+  down.style.color = setStyles("downColor");
+  header.style.backgroundColor = setStyles("headerBackgroundColor");
+  codecademy.style.color = setStyles("codecademyColor");
+  certificate.style.color = setStyles("certificateColor");
+  dropdownMenu.style.backgroundColor = setStyles("dropdownMenuBackgroundColor");
   let i;
   for (i = 0; i < menuItems.length; i++) {
-    menuItems[i].style.color = 'snow';
+    menuItems[i].style.color = setStyles('menuItemsColor');
   };
   let j;
   for (j = 0; j < menuIcon.length; j++) {
-    menuIcon[j].style.backgroundColor = 'snow';
+    menuIcon[j].style.backgroundColor = setStyles('menuIconBackgroundColor');
   };
   let k;
   for (k = 0; k < dropdownItems.length; k++) {
-    dropdownItems[k].style.color = 'snow';
+    dropdownItems[k].style.color = setStyles('dropdownItemsColor');
   };
   if (g.matches && h.matches) {
-    robFenger.style.color = 'snow';
+    robFenger.style.color = setStyles('robFengerColor');
+  };
+  
+}
+}
+
+toggleStorage();
+
+
+/*
+const reactStorage = () => {
+  if (localStorage.getItem("headerBackgroundColor")) {
+    
   }
 }
 
+reactStorage();*/
+
+
+darkButton.onclick = () => {
+  populateStorage("frontBackgroundColor", "black");
+  populateStorage("pageColor", "snow");
+  populateStorage("pageBackgroundColor", "black");
+  populateStorage("toggleBorder", "solid white 1px");
+  populateStorage("upColor", "snow");
+  populateStorage("downColor", "snow");
+  populateStorage("headerBackgroundColor", "black");
+  populateStorage("codecademyColor", "snow");
+  populateStorage("certificateColor", "snow");
+  populateStorage("dropdownMenuBackgroundColor", "black");
+  populateStorage("menuItemsColor", "snow");
+  populateStorage("menuIconBackgroundColor", "snow");
+  populateStorage("dropdownItemsColor", "snow");
+  populateStorage("robFengerColor", "snow");
+  toggleStorage();
+}
+
 lightButton.onclick = () => {
-  //front.style.backgroundColor = 'snow'; 
-  populateStorage("front.style.backgroundColor", "snow");
-  //page.style.color = 'black';
-  populateStorage("page.style.color", "black");
-  //page.style.backgroundColor = 'snow';
-  populateStorage("page.style.backgroundColor", "snow");
-  toggle.style.border = 'solid black 1px';
-  up.style.color = "black";
-  down.style.color = 'black';
-  header.style.backgroundColor = 'snow';
-  codecademy.style.color = 'black';
-  certificate.style.color = 'black';
-  dropdownMenu.style.backgroundColor = 'snow';
-  let i;
-  for (i = 0; i < menuItems.length; i++) {
-    menuItems[i].style.color = 'black';
-  };
-  let j;
-  for (j = 0; j < menuIcon.length; j++) {
-    menuIcon[j].style.backgroundColor = 'black';
-  };
-  let k;
-  for (k = 0; k < dropdownItems.length; k++) {
-    dropdownItems[k].style.color = 'black';
-  };
-  if (g.matches && h.matches) {
-    robFenger.style.color = 'black';
-  }
+  populateStorage("frontBackgroundColor", "snow");
+  populateStorage("pageColor", "black");
+  populateStorage("pageBackgroundColor", "snow");
+  populateStorage("toggleBorder", "solid black 1px");
+  populateStorage("upColor", "black");
+  populateStorage("downColor", "black");
+  populateStorage("headerBackgroundColor", "snow");
+  populateStorage("codecademyColor", "black");
+  populateStorage("certificateColor", "black");
+  populateStorage("dropdownMenuBackgroundColor", "snow");
+  populateStorage("menuItemsColor", "black");
+  populateStorage("menuIconBackgroundColor", "black");
+  populateStorage("dropdownItemsColor", "black");
+  populateStorage("robFengerColor", "snow");
+  toggleStorage();
 }
 
 up.onmouseenter = () => {
