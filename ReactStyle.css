@@ -288,6 +288,10 @@ nav {
         height: 110px;
       }
 
+      body {
+          margin-top: 130px;
+      }
+
     nav {
         visibility: hidden;
     }
@@ -328,6 +332,10 @@ nav {
         height: 82.5px;
       }
 
+    body {
+        margin-top: 102.5px;
+    }
+
     nav {
         visibility: hidden;
     }
@@ -367,6 +375,10 @@ nav {
     .navbar {
         height: 82.5px;
       }
+
+    body {
+        margin-top: 102.5px;
+    }
 
     nav {
         font-size: 30px;
