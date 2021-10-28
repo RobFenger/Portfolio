@@ -88,7 +88,7 @@ let menuIcon = document.getElementsByClassName("menu-icon");
 let robFenger = document.getElementById("h1");
 let dropdownItems = document.getElementsByClassName("dd-menu-item");
 let front = document.getElementById("front");
-let reactHeader = document.getElementById("react-header");
+
 
 const populateStorage = (key, value) => {
   localStorage.setItem(key, value);
