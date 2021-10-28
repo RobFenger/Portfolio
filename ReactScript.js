@@ -1,14 +1,9 @@
-
 let body = document.getElementById("body");
 let reactHeader = document.getElementById("header");
-
-
 let reactMenuItems = document.getElementsByClassName("menu-item");
 let reactMenuIcon = document.getElementsByClassName("menu-icon");
 let reactRobFenger = document.getElementById("h1");
 let reactDropdownItems = document.getElementsByClassName("dd-menu-item");
-
-
 let reactDropdownMenu = document.getElementById("dropdown-menu");
 
 
@@ -18,24 +13,23 @@ const setMode = (key) => {
 }
 
 const setFromStorage = () => {
-
   reactHeader.style.backgroundColor = setMode("headerBackgroundColor");
   reactDropdownMenu.style.backgroundColor = setMode("dropdownMenuBackgroundColor");
-        let i;
-        for (i = 0; i < reactMenuItems.length; i++) {
-        reactMenuItems[i].style.color = setMode('menuItemsColor');
-        };
-        let j;
-        for (j = 0; j < reactMenuIcon.length; j++) {
-        reactMenuIcon[j].style.backgroundColor = setMode('menuIconBackgroundColor');
-        };
-        let k;
-        for (k = 0; k < reactDropdownItems.length; k++) {
-        reactDropdownItems[k].style.color = setMode('dropdownItemsColor');
-        };
-        body.style.backgroundColor = setMode("pageBackgroundColor");
-        body.style.color = setMode("pageColor"); 
-        reactDropdownMenu.style.backgroundColor = setMode("dropdownMenuBackgroundColor");
+  let i;
+  for (i = 0; i < reactMenuItems.length; i++) {
+    reactMenuItems[i].style.color = setMode('menuItemsColor');
+  };
+  let j;
+  for (j = 0; j < reactMenuIcon.length; j++) {
+    reactMenuIcon[j].style.backgroundColor = setMode('menuIconBackgroundColor');
+  };
+  let k;
+  for (k = 0; k < reactDropdownItems.length; k++) {
+    reactDropdownItems[k].style.color = setMode('dropdownItemsColor');
+  };
+  body.style.backgroundColor = setMode("pageBackgroundColor");
+  body.style.color = setMode("pageColor"); 
+  reactDropdownMenu.style.backgroundColor = setMode("dropdownMenuBackgroundColor");
 }
 
 setFromStorage();
