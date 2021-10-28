@@ -90,6 +90,7 @@ let dropdownItems = document.getElementsByClassName("dd-menu-item");
 let front = document.getElementById("front");
 
 
+
 const populateStorage = (key, value) => {
   localStorage.setItem(key, value);
 }
@@ -133,16 +134,6 @@ if (localStorage.getItem("headerBackgroundColor")) {
 toggleStorage();
 
 
-/*
-const reactStorage = () => {
-  if (localStorage.getItem("headerBackgroundColor")) {
-    
-  }
-}
-
-reactStorage();*/
-
-
 darkButton.onclick = () => {
   populateStorage("frontBackgroundColor", "black");
   populateStorage("pageColor", "snow");
@@ -158,6 +149,7 @@ darkButton.onclick = () => {
   populateStorage("menuIconBackgroundColor", "snow");
   populateStorage("dropdownItemsColor", "snow");
   populateStorage("robFengerColor", "snow");
+ 
   toggleStorage();
 }
 
@@ -175,56 +167,9 @@ lightButton.onclick = () => {
   populateStorage("menuItemsColor", "black");
   populateStorage("menuIconBackgroundColor", "black");
   populateStorage("dropdownItemsColor", "black");
-  populateStorage("robFengerColor", "snow");
+  populateStorage("robFengerColor", "black");
+  
   toggleStorage();
-}
-
-up.onmouseenter = () => {
-  up.style.color = 'lightseagreen';
-}
-
-up.onmouseleave = () => {
-  if (page.style.backgroundColor === 'snow') {
-    up.style.color = 'black';
-  } else {
-    up.style.color = 'snow';
-  }
-}
-
-down.onmouseenter = () => {
-  down.style.color = 'lightseagreen';
-}
-
-down.onmouseleave = () => {
-  if (page.style.backgroundColor === 'snow') {
-    down.style.color = 'black';
-  } else {
-    down.style.color = 'snow';
-  }
-}
-
-codecademy.onmouseenter = () => {
-  codecademy.style.color = 'lightseagreen';
-}
-
-certificate.onmouseenter = () => {
-  certificate.style.color = 'lightseagreen';
-}
-
-codecademy.onmouseleave = () => {
-  if (page.style.backgroundColor === 'snow') {
-    codecademy.style.color = 'black';
-  } else {
-    codecademy.style.color = 'snow';
-  }
-}
-
-certificate.onmouseleave = () => {
-  if (page.style.backgroundColor === 'snow') {
-    certificate.style.color = 'black';
-  } else {
-    certificate.style.color = 'snow';
-  }
 }
 
 
@@ -234,56 +179,40 @@ let menuProjects = document.getElementById("menu-projects");
 let menuSkills = document.getElementById("menu-skills");
 let menuContact = document.getElementById("menu-contact");
 
-menuAbout.onmouseenter = () => {
-  menuAbout.style.color = 'lightseagreen';
-}
-
-menuProjects.onmouseenter = () => {
-  menuProjects.style.color = 'lightseagreen';
-}
-
-menuSkills.onmouseenter = () => {
-  menuSkills.style.color = 'lightseagreen';
-}
-
-menuContact.onmouseenter = () => {
-  menuContact.style.color = 'lightseagreen';
-}
-
-menuAbout.onmouseleave = () => {
-  if (page.style.backgroundColor === 'snow') {
-    menuAbout.style.color = 'black';
-  } else {
-    menuAbout.style.color = 'snow';
+const menuHover = (element) => {
+  element.onmouseenter = () => {
+    element.style.color = 'lightseagreen';
   }
 }
 
-menuProjects.onmouseleave = () => {
-  if (page.style.backgroundColor === 'snow') {
-    menuProjects.style.color = 'black';
-  } else {
-    menuProjects.style.color = 'snow';
+const menuHoverOut = (element) => {
+  element.onmouseleave = () => {
+    if (page.style.backgroundColor === 'snow') {
+      element.style.color = 'black';
+    } else {
+      element.style.color = 'snow';
+    }
   }
 }
 
-menuSkills.onmouseleave = () => {
-  if (page.style.backgroundColor === 'snow') {
-    menuSkills.style.color = 'black';
-  } else {
-    menuSkills.style.color = 'snow';
-  }
-}
-
-menuContact.onmouseleave = () => {
-  if (page.style.backgroundColor === 'snow') {
-    menuContact.style.color = 'black';
-  } else {
-    menuContact.style.color = 'snow';
-  }
-}
+menuHover(menuAbout);
+menuHover(menuProjects);
+menuHover(menuSkills);
+menuHover(menuContact);
+menuHover(up);
+menuHover(down);
+menuHover(codecademy);
+menuHover(certificate);
 
 
-
+menuHoverOut(menuAbout);
+menuHoverOut(menuProjects);
+menuHoverOut(menuSkills);
+menuHoverOut(menuContact);
+menuHoverOut(up);
+menuHoverOut(down);
+menuHoverOut(codecademy);
+menuHoverOut(certificate);
 
 
 
