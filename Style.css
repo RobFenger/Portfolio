@@ -578,6 +578,14 @@ nav {
     object-fit: cover;
 }
 
+.chessclock {
+    background-image: url("Resources/ChessClock.png");
+    background-color: lightseagreen;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
 .hire-to-inspire {
     background-image: url("Resources/HireToInspire.png");
     background-color: lightseagreen;
