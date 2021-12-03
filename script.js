@@ -1,19 +1,43 @@
-let iconContainer = document.getElementById("icon-container");
 let dropdownMenu = document.getElementById("dropdown-menu");
 
-iconContainer.onclick = () => {
-  if (dropdownMenu.style.visibility === 'hidden') {
-    dropdownMenu.style.visibility = 'visible';
-  } else {
-    dropdownMenu.style.visibility = 'hidden';
-  }
-}
+//jquery
+$(document).ready(() => {
 
-document.onmouseup = (event) => {
-  if (event.target !== dropdownMenu) {
-    dropdownMenu.style.visibility = 'hidden';
-  }
-}  
+  //in small screen or mobile device to open up and close dropdownmenu when clicking the menu-icon
+  $('#icon-container').on('click', () => {
+    $('#dropdown-menu').slideToggle();
+  })
+
+  //when selecting a section close the dropdownmenu
+  $('#dropdown-menu').children().children().on('click', () => {
+    $('#dropdown-menu').slideUp();
+  })
+
+  //close the dropdownmenu when clicking outside the header (and its descendants)
+  $(document).on('click', event => {
+    const container = $("header");
+    if (!container.is(event.target) && container.has(event.target).length === 0) {
+        $('#dropdown-menu').slideUp();
+    }
+  }) 
+
+
+  //hover-effect over the dropdownmenu-items with recognition of black or white setting of the page
+  $('#dropdown-menu').children().children().on('mouseenter', event => {
+    $(event.currentTarget).css('color', 'lightseagreen');
+  })
+  $('#dropdown-menu').children().children().on('mouseleave', event => {
+    if (localStorage.getItem("headerBackgroundColor")) {
+      if (document.URL.includes("react")) {
+        $(event.currentTarget).css('color',  setMode("pageColor"));
+      } else {
+        $(event.currentTarget).css('color',  setStyles("pageColor"));
+      }
+    } else {
+      $(event.currentTarget).css('color', 'white');
+     }
+  })
+})
 
 
 
@@ -22,7 +46,7 @@ let down = document.getElementById("down");
 let page = document.getElementById("page");
 let up = document.getElementById("up");
 
-
+//to find the height of the screen
 let a = window.matchMedia("(max-height: 700px)");
 let b = window.matchMedia("(max-height: 600px)");
 let c = window.matchMedia("(max-height: 500px)");
@@ -41,7 +65,7 @@ let portrait = window.matchMedia("(orientation: portrait)");
 let landscape = window.matchMedia("(orientation: landscape)");
 
 
-
+//to make the main-page slide over the front-poge depending on the height of the screen
 down.onclick = () => {
   page.style.top = '55px';
   if (g.matches && h.matches) {
@@ -53,6 +77,7 @@ down.onclick = () => {
   }
 }
 
+//to make the main-page slide back again
 up.onclick = () => {
   if (f.matches) {
     page.style.top = '200px';
@@ -90,16 +115,17 @@ let dropdownItems = document.getElementsByClassName("dd-menu-item");
 let front = document.getElementById("front");
 
 
-
+//to set key-value pairs into local storage
 const populateStorage = (key, value) => {
   localStorage.setItem(key, value);
 }
-
+//to get the value from the key 
 const setStyles = (key) => {
   let style = localStorage.getItem(key);
   return style;
 }
 
+//check if there is some value in localStorage and if so use it to decide which colors elements must have
 const toggleStorage = () => {
 if (localStorage.getItem("headerBackgroundColor")) {
   front.style.backgroundColor = setStyles('frontBackgroundColor');
@@ -112,6 +138,8 @@ if (localStorage.getItem("headerBackgroundColor")) {
   codecademy.style.color = setStyles("codecademyColor");
   certificate.style.color = setStyles("certificateColor");
   dropdownMenu.style.backgroundColor = setStyles("dropdownMenuBackgroundColor");
+
+  //loops to target all the class elements at once
   let i;
   for (i = 0; i < menuItems.length; i++) {
     menuItems[i].style.color = setStyles('menuItemsColor');
@@ -131,9 +159,10 @@ if (localStorage.getItem("headerBackgroundColor")) {
 }
 }
 
+//trigger the function when the page is started so the localStorage will be checked right away
 toggleStorage();
 
-
+//if dark-button is selected populate localStorage with the corresponding key-value pairs
 darkButton.onclick = () => {
   populateStorage("frontBackgroundColor", "black");
   populateStorage("pageColor", "snow");
@@ -153,6 +182,7 @@ darkButton.onclick = () => {
   toggleStorage();
 }
 
+//if light-button is selected populate localStorage with the corresponding key-value pairs
 lightButton.onclick = () => {
   populateStorage("frontBackgroundColor", "snow");
   populateStorage("pageColor", "black");
@@ -179,6 +209,7 @@ let menuProjects = document.getElementById("menu-projects");
 let menuSkills = document.getElementById("menu-skills");
 let menuContact = document.getElementById("menu-contact");
 
+//to get the right hover effects depending on black or white mode
 const menuHover = (element) => {
   element.onmouseenter = () => {
     element.style.color = 'lightseagreen';
@@ -216,7 +247,7 @@ menuHoverOut(certificate);
 
 
 
-
+//javascript for the cardgame
 let cardImage1 = document.getElementById('cover1');
 let cardImage2 = document.getElementById('cover2');
 let cardImage3 = document.getElementById('cover3');
@@ -326,7 +357,7 @@ function gameOver (status) {
 startRound();
 
 
-
+//to trigger the animations for the lines when the line is coming into the screen
 const lineMachine = (line, animation, wrapper) => {
   const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
