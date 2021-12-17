@@ -602,8 +602,8 @@ nav {
     object-fit: cover;
 }
 
-.tea-cozy {
-    background-image: url("Resources/TeaCozy.png");
+.infinit {
+    background-image: url("Resources/VitoWillems.png");
     background-color: lightseagreen;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
